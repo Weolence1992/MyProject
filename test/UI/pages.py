@@ -84,7 +84,7 @@ class MainPage(BasePage):
 
         # Принять куки если есть
         try:
-            cookie_accept = (By.XPATH, "//button[contains(text(), 'Принять') or contains(text(), 'Согласен')]")
+            cookie_accept = (By.XPATH, "//button[contains(text(), 'Окей') or contains(text(), 'Окей')]")
             if self.is_visible(cookie_accept, 3):
                 self.click(cookie_accept)
         except:
@@ -352,4 +352,5 @@ class CheckoutPage(BasePage):
             return (self.is_visible(self.ORDER_BUTTON, 5) or
                     self.is_visible(self.DELIVERY_METHODS, 5))
         except:
+
             return False
