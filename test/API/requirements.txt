@@ -1,0 +1,6 @@
+pytest==8.4.1
+requests==2.31.0
+pytest-html==4.1.0
+allure-pytest==2.15.0
+
+
