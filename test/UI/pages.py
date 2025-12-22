@@ -148,10 +148,10 @@ class SearchPage(BasePage):
     """Страница результатов поиска"""
 
     # Локаторы
-    PRODUCT_CARDS = (By.CSS_SELECTOR, "a.product-card__link j-card-link j-open-full-product-card")
-    PRODUCT_NAMES = (By.CLASS_NAME, "product-card__brand-wrap")
-    PRODUCT_PRICES = (By.CSS_SELECTOR, "div.product-card__price price")
-    ADD_TO_CART_BUTTONS = (By.CSS_SELECTOR, "a.product-card__add-basket j-add-to-basket orderLink--tNgvO btn-main")
+    PRODUCT_CARDS = (By.CSS_SELECTOR, "a.product-card__link j-card-link j-open-full-product-card") ## Карточка продукта
+    PRODUCT_NAMES = (By.CLASS_NAME, "product-card__brand-wrap") ## наименование продукта
+    PRODUCT_PRICES = (By.CSS_SELECTOR, "div.product-card__price price") ## цена продукта
+    ADD_TO_CART_BUTTONS = (By.CSS_SELECTOR, "a.product-card__add-basket j-add-to-basket orderLink--tNgvO btn-main") ## доабвить в корзину
 
 
     def get_product_count(self):
@@ -354,3 +354,4 @@ class CheckoutPage(BasePage):
         except:
 
             return False
+
